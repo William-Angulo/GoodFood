@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/marca/contenido/logogood.png">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo"><span>Good</span>Food</a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+    
+        <nav class="navbar">
+            <a href="index.html">Inicio</a></li>
+            <a href="nosotros.html">Nosotros</a></li>
+            <a href="servicios.html">Servicios</a></li>
+            <a href="planes.html">Planes</a></li>
+            <a href="contacto.html">Contacto</a></li>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="box-area">
+            <div  class="contact-info">
+                <h2 style="text-align: left">Ubicación</h2>
+                <iframe
+                    src="https://maps.google.com/maps?q=La%20Bodega%20de%20la%20Trattoria%20-%20Armendariz&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <form action="" class="form-area">
+                    <div class="msg-area">
+                        <textarea placeholder="Comentarios:" name="comments" id="comment" cols="25" rows="3"></textarea>
+                        <input value="Enviar" class="formButton" type="submit" />
+                        <input value="Restablecer" class="formButton" type="reset" />
+                    </div>
+                    <div class="details-area">
+                        <h2>Contactenos</h2>
+                        <!-- Name -->
+                        <label for="name">Nombre</label>
+                        <input type="text" required id="name" placeholder="Nombre completo:*" />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Correo electronico:*" />
+                        <label for="tel">Telefono</label>
+                        <input type="tel" id="tel" required placeholder="Teléfono celular:*" />
+                        <legend>Sexo:</legend>
+                        <select name="sex" id="sex">
+                            <option value="placeholder" disabled selected>Elija una opción</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="None">Prefiero no decirlo</option>
+                        </select>
+    
+                        <label>Nuevo cliente:</label>
+                        <input type="checkbox" name="new clients" id="newclient" />
+                    </div>
+                    
+                   
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <hr>
+</body>
+<footer>
+    <div class="container-footer">
+        <div class="content-foo">
+            <h4>Phone</h4>
+            <p>895-158-7890</p>
+        </div>
+        <div class="content-foo">
+            <h4>Email</h4>
+            <p>wmav</p>
+        </div>
+        <div class="content-foo">
+            <h4>Location</h4>
+            <p>Lima, Miraflores</p>
+        </div>
+    </div>
+    <h2 class="title-final">Copyright© 2021</h2>
+</footer>
+
+</html>
