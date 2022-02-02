@@ -152,10 +152,10 @@ header label{
 }
   
 .button:hover{
-    background-color: #831c26;
-    transition-property: background-color;
-    transition-duration: 350ms;
-    transition-timing-function: ease-in;
+    background:#831c26;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+    transform:scale(1.2);
 }
 .formu_bottom {
     padding: 5px 30px;
