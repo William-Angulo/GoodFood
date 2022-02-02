@@ -149,10 +149,13 @@ header label{
     border-radius: .5rem;
     font-weight: 600;
     transition: .3s;
-  }
+}
   
 .button:hover{
-    background-color: #DA2535;
+    background-color: #831c26;
+    transition-property: background-color;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in;
 }
 .formu_bottom {
     padding: 5px 30px;
