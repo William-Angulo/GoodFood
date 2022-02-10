@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,21 @@
     <link rel="shortcut icon" href="/marca/contenido/logogood.png">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+    <!-- bootstrap cdn link -->
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
 
         <a href="#" class="logo"><span>Good</span>Food</a>
-    
+
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar" class="fas fa-bars"></label>
-    
+
         <nav class="navbar">
             <a href="index.html">Inicio</a></li>
             <a href="nosotros.html">Nosotros</a></li>
@@ -29,7 +34,31 @@
     </header>
     <main class="l-main">
         <!-- Primer seccion -->
-        <section class="home" id="home">
+        <div id="carouselExampleControls" class="container-fluid shadow-lg p-0 carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/restaurant1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant3.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__img">
                     <img src="../img/comiendo.svg" alt="people_eating">
@@ -41,80 +70,90 @@
                     <a href="#" class="button">Comienza ya</a>
                 </div>
             </div>
-        </section>
-                <!-- review section starts  -->
+        </section> -->
+            <!-- review section starts  -->
 
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <h1 class="heading head"> Nuestra experiencia </h1>
-            </div>
-
-        </section>
-        <section class="review" id="review">
-
-            <h1 class="heading head"> las reseñas </h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="../img/face1.jpg" alt="">
-                        <h3>williamsinko</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="comment">
-                            Me encanta esto de aca, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
-                        </div>
-                    </div>
+            <section class="knowledge">
+                <div class="knowledge__container container">
+                    <h1 class="heading head"> Nuestra experiencia </h1>
                 </div>
 
-                <div class="box">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="../img/face2.jpg" alt="">
-                        <h3>Mateo Fajardo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="comment">
-                            Buena idea, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
-                        </div>
-                    </div>
-                </div>
+            </section>
+            <section class="review" id="review">
 
-                <div class="box">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="../img/face1.jpg" alt="">
-                        <h3>Lucas Alario</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="comment">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                <h1 class="heading head"> las reseñas </h1>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="../img/face1.jpg" alt="">
+                            <h3>williamsinko</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="comment">
+                                Me encanta esto de aca, amet consectetur adipisicing elit. Possimus et, perspiciatis
+                                nisi
+                                tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum
+                                repellat,
+                                commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                            </div>
                         </div>
                     </div>
+
+                    <div class="box">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="../img/face2.jpg" alt="">
+                            <h3>Mateo Fajardo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="comment">
+                                Buena idea, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore
+                                aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat,
+                                commodi
+                                eum. Ullam cupiditate expedita officiis obcaecati?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-quote-right"></i>
+                        <div class="user">
+                            <img src="../img/face1.jpg" alt="">
+                            <h3>Lucas Alario</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="comment">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi
+                                tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum
+                                repellat,
+                                commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
+            </section>
 
-        </section>
-
-<!-- review section ends -->
+            <!-- review section ends -->
     </main>
 </body>
 <footer>
@@ -134,4 +173,5 @@
     </div>
     <h2 class="title-final">Copyright© 2021</h2>
 </footer>
+
 </html>

@@ -12,17 +12,21 @@
     <link rel="shortcut icon" href="/marca/contenido/logogood.png">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body style="background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%); ">
     <header>
-
         <a href="#" class="logo"><span>Good</span>Food</a>
-    
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar" class="fas fa-bars"></label>
-    
+
         <nav class="navbar">
             <a href="index.html">Inicio</a></li>
             <a href="nosotros.html">Nosotros</a></li>
@@ -32,49 +36,132 @@
         </nav>
     </header>
     <main class="l-main">
-        <div class="box-area">
-            <div  class="contact-info">
-                <h2 style="text-align: left">Ubicación</h2>
-                <iframe
-                    src="https://maps.google.com/maps?q=La%20Bodega%20de%20la%20Trattoria%20-%20Armendariz&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="contact-info">
-                <form action="" class="form-area">
-                    <div class="msg-area">
-                        <textarea placeholder="Comentarios:" name="comments" id="comment" cols="25" rows="3"></textarea>
-                        <input value="Enviar" class="formButton" type="submit" />
-                        <input value="Restablecer" class="formButton" type="reset" />
+        <!-- Section contact-->
+        <section>
+            <div class="section black">
+                <h2 class="text-center">Registranos</h2>
+                <div class="row ">
+                    <div class="col">
+                        <ul class="boxc">
+                            <li class="">
+                                <span class="blah"><i class="fas fa-map-pin"></i></span>
+                            </li>
+                            <li class="black">Avenida:
+                            </li>
+                            <li class="contact-table">
+                                Lima, Miraflores
+                            </li>
+                        </ul>
                     </div>
-                    <div class="details-area">
-                        <h2>Contactenos</h2>
-                        <!-- Name -->
-                        <label for="name">Nombre</label>
-                        <input type="text" required id="name" placeholder="Nombre completo:*" />
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required placeholder="Correo electronico:*" />
-                        <label for="tel">Telefono</label>
-                        <input type="tel" id="tel" required placeholder="Teléfono celular:*" />
-                        <legend>Sexo:</legend>
-                        <select name="sex" id="sex">
-                            <option value="placeholder" disabled selected>Elija una opción</option>
-                            <option value="Mujer">Mujer</option>
-                            <option value="Hombre">Hombre</option>
-                            <option value="None">Prefiero no decirlo</option>
-                        </select>
     
-                        <label>Nuevo cliente:</label>
-                        <input type="checkbox" name="new clients" id="newclient" />
+                    <div class="col">
+                        <ul class="boxc">
+                            <li class="blah"> <i class="fas fa-envelope"></i>
+                            </li>
+                            <li class="black">
+                                Email:
+                            </li>
+                            <li class="contact-table">
+                                wmava@gmail.com
+                            </li>
+                        </ul>
+    
                     </div>
-                    
-                   
-
-                </form>
+    
+                    <div class="col">
+                        <ul class="boxc">
+                            <li class="blah"> <i class="fas fa-phone-square-alt"></i>
+                            </li>
+                            <li class="black">
+                                Telefono:
+                            </li>
+                            <li class="contact-table">
+                                9974566789
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-        </div>
+        </section>
+        <!-- Section contact-->
+            <div class="color-contacto color-propiedades animado">
+                <div class="contenedor-limite padding-divs">
+                    <h3 id="contacto" class="h-responsive">Contacto</h3>
+                    <div class="flex-contacto">
+                        <div class="div-contacto-info">
+                            <img class="logo-sa-contacto" src="../marca/contenido/logogood.png"
+                                alt="logo de Seguridad Activa en sección contactos">
+                            <div class="div-contacto-info2">
+                                <img class="icons-contacto" src="../img/icon-phone-contacto.webp"
+                                    alt="numero de telefono: 9975564 y 9923727">
+                                <h4 class="h4-contacto">(51) 997-5564 | (51) 992-3727</h4>
+                            </div>
+                            <div class="line-contacto"></div>
+                            <div class="div-contacto-info2">
+                                <img class="icons-contacto" src="../img/icon-email-contacto.webp"
+                                    alt="contacto de email: wmav@gmail.com">
+                                <h4 class="h4-contacto">wmav@gmail.com</h4>
+                            </div>
+                            <div class="line-contacto"></div>
+                            <div class="div-contacto-info2">
+                                <img class="icons-contacto" src="../img/icon-time-contacto.webp"
+                                    alt="Horarios de servicios: Lunes a Viernes: 8:00 hs a 19:00 hs. Sábado de 8:00 hs a 13 hs.">
+                                <h4 class="h4-contacto">Horario de Servicio</h4>
+                                <h4 class="h4-contacto">Lunes - Viernes: 8:00 hs - 19:00 hs</h4>
+                                <h4 class="h4-contacto">Sábado: 8:00 hs - 13:00 hs</h4>
+                            </div>
+                            <div>
+                                <iframe class="maps"
+                                src="https://maps.google.com/maps?q=La%20Bodega%20de%20la%20Trattoria%20-%20Armendariz&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="div-form">
+                            <form class="font-form" action="https://formspree.io/f/xvovljov" method="POST">
+                                <div class="form-floating mb-3">
+                                    <input name="nombre y apellido" type="text" class="form-control" id="nombre"
+                                        placeholder="Nombre y Apellido">
+                                    <label for="nombre">Nombre y Apellido</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="empresa" type="text" class="form-control" id="empresa"
+                                        placeholder="Empresa">
+                                    <label for="empresa">Empresa</label>
+                                </div>
+                                <select name="servicio" class="form-select font-form" aria-label="Default select example">
+                                    <option class="color-form font-form" selected>Tipo de Servicio</option>
+                                    <option value="Programas específicos de reducción de siniestralidad">Sugerencia de Huarique</option>
+                                    <option value="Capacitación del personal">Sugerencia de Recetas</option>
+                                
+                                </select><br>
+                                <div class="form-floating mb-3">
+                                    <input name="mail" type="email" class="form-control" id="mail"
+                                        placeholder="Nombre y Apellido">
+                                    <label for="mail">E-mail de contacto</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="telefono" type="tel" class="form-control" id="telefono"
+                                        placeholder="Nombre y Apellido">
+                                    <label for="telefono">Teléfono de contacto</label>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label"></label>
+                                    <textarea name="mensaje" class="form-control color-form" id="mensaje"
+                                        rows="3">Mensaje</textarea>
+                                </div>
+                                <div class="div-button">
+                                    <button type="submit"
+                                        class="btn btn-outline-primary button-vertodo-enviar">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
     </main>
-    <hr>
 </body>
 <footer>
     <div class="container-footer">
