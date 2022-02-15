@@ -1,0 +1,130 @@
+//Esto es un comentario en SCSS
+/*COMENTARIO DE CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --brown:#661203d8;
+    --orange:#f87823;
+    --gradient:linear-gradient(90deg, var(--brown), var(--orange));
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--orange);
+    color:#fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.home__img img {
+  animation: float 3s linear infinite;
+}
+
+body{
+    background:#f9f9f9;
+}
+
+section{
+    min-height: 700px;
+    padding:0 9%;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.l-main{
+    overflow: hidden;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #971d08;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+	padding: 2rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	.logo {
+		font-size: 3rem;
+		color: var(--brown);
+		span {
+			color: var(--orange);
+		}
+	}
+	.navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: #971d08;
+		padding: 1rem 2rem;
+		border-top: .1rem solid rgba(0,0,0,.2);
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+		transform-origin: top;
+		transform: scaleY(0);
+		opacity: 0;
+		transition: .2s linear;
+		a {
+			font-size: 1.7rem;
+			margin-left: 2rem;
+			color: whitesmoke;
+			text-transform: uppercase;
+			display: block;
+			margin: 2rem 0;
+			font-size: 2rem;
+			&:hover {
+				color: var(--orange);
+			}
+		}
+	}
+	input {
+		display: none;
+		&:checked {
+			& ~ .navbar {
+				transform: scaleY(1);
+				opacity: 1;
+			}
+			& ~ label {
+				&::before {
+					content: '\f00d';
+				}
+			}
+		}
+	}
+	label {
+		font-size: 3rem;
+		color: var(--brown);
+		cursor: pointer;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+
+
+
+
