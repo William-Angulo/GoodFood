@@ -1,6 +1,15 @@
 //Esto es un comentario en SCSS
 /*COMENTARIO DE CSS*/
 
+@import "pages/contacto";
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/planes";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/servicios";
+@import "tools/mediaqueries";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 :root{
@@ -55,7 +64,6 @@ section{
 .l-main{
     overflow: hidden;
 }
-
 .heading {
 	text-align: center;
 	background: var(--gradient);
@@ -67,167 +75,6 @@ section{
 	padding: 1rem;
 }
 
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #971d08;
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-	padding: 2rem 9%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 1000;
-	.logo {
-		font-size: 3rem;
-		color: var(--brown);
-		span {
-			color: var(--orange);
-		}
-	}
-	.navbar {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		background: #971d08;
-		padding: 1rem 2rem;
-		border-top: .1rem solid rgba(0,0,0,.2);
-		box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-		transform-origin: top;
-		transform: scaleY(0);
-		opacity: 0;
-		transition: .2s linear;
-		a {
-			font-size: 1.7rem;
-			margin-left: 2rem;
-			color: whitesmoke;
-			text-transform: uppercase;
-			display: block;
-			margin: 2rem 0;
-			font-size: 2rem;
-			&:hover {
-				color: var(--orange);
-			}
-		}
-	}
-	input {
-		display: none;
-		&:checked {
-			& ~ .navbar {
-				transform: scaleY(1);
-				opacity: 1;
-			}
-			& ~ label {
-				&::before {
-					content: '\f00d';
-				}
-			}
-		}
-	}
-	label {
-		font-size: 3rem;
-		color: var(--brown);
-		cursor: pointer;
-		visibility: hidden;
-		opacity: 0;
-	}
-}
-
-.button {
-	display: inline-block;
-	background-color: #DA2535;
-	color: #fff;
-	padding: 1rem 1.5rem;
-	border-radius: .5rem;
-	font-weight: 600;
-	transition: .3s;
-	&:hover {
-		background: #831c26;
-		-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
-		box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
-		transform: scale(1.2);
-	}
-}
-.formu_bottom {
-	padding: 5px 30px;
-	background: linear-gradient(91.54deg, #ffb31e 2.78%, #ffe653 104.38%);
-	border-radius: 47px;
-	border: none;
-	cursor: pointer;
-	font-family: var(--popins);
-	font-size: 20px;
-	font-weight: 600;
-	color: white;
-}
-.knowledge {
-	background-color: #f5f5fa;
-	background-image: radial-gradient(#ec931d 0.5px, transparent 0.5px), radial-gradient(#ec931d 0.5px, #f3b25c 0.5px);
-	background-size: 20px 20px;
-	background-position: 0 0, 10px 10px;
-	overflow: hidden;
-}
-.knowledge__container {
-	display: flex;
-	grid-template-columns: 1fr 1fr;
-	gap: 1em;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-.review {
-	.box-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		.box {
-			background: #fff;
-			margin: 1rem;
-			padding: 1rem;
-			text-align: center;
-			position: relative;
-			border: .1rem solid rgba(0,0,0,.2);
-			box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-			flex: 1 1 30rem;
-			border-radius: .5rem;
-			.fa-quote-right {
-				position: absolute;
-				top: 1rem;
-				right: 2rem;
-				font-size: 8rem;
-				color: red;
-				opacity: .3;
-			}
-			.user {
-				img {
-					border-radius: 50%;
-					object-fit: cover;
-					height: 7rem;
-					width: 7rem;
-					margin-top: 2rem;
-				}
-				h3 {
-					color: var(--orange);
-					font-size: 2rem;
-				}
-				.stars {
-					i {
-						color: var(--brown);
-						font-size: 1.5rem;
-						padding: 1rem 0;
-					}
-				}
-			}
-			.comment {
-				color: #666;
-				font-size: 1.4rem;
-				padding: 1rem;
-			}
-		}
-	}
-}
 
 
 

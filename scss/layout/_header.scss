@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #971d08;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  
+    .logo {
+      font-size: 3rem;
+      color: var(--brown);
+  
+      span {
+        color: var(--orange);
+      }
+    }
+  
+    .navbar a {
+      font-size: 1.7rem;
+      margin-left: 2rem;
+      color: whitesmoke;
+      text-transform: uppercase;
+  
+      &:hover {
+        color: var(--orange);
+      }
+    }
+  
+    input {
+      display: none;
+    }
+  
+    label {
+      font-size: 3rem;
+      color: var(--brown);
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
