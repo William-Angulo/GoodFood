@@ -1,0 +1,376 @@
+/*ContactMe*/
+
+.box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .single-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: rgb(238, 192, 67);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+  }
+  
+  .img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgb(83, 83, 71);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-area {
+    display: flex;
+    background-color: rgb(247, 201, 52);
+    border-radius: 25px;
+    padding: 1.9em;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .blah {
+    background-color: #f38014de;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: larger;
+    text-transform: uppercase;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px 0 0 0;
+    text-align: center;
+    border-color: #c0b1b1;
+    border-style: solid;
+  }
+  
+  .black {
+    color: #f38014de;
+    font-size: larger;
+  
+    h2 {
+      color: #f8f8ff;
+      border-bottom: 2px solid #f38014de;
+    }
+  }
+  
+  .contenedor-limite {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+  
+  .contenedor-limite2 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .container-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .padding-divs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .vertodo-button {
+    max-width: 175px;
+    height: 50px;
+    background-color: #ffffffb2;
+    border-radius: 5px;
+  }
+  
+  h4 {
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: 2px;
+    position: relative;
+  }
+  
+  h3 {
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 46px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  
+  h6 {
+    font-family: Montserrat,sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: 2px;
+    position: relative;
+  }
+  
+  .button-vertodo-enviar {
+    background-color: #dd0e42da;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    outline: 1px solid;
+    outline-color: rgba(49, 138, 172, 0.4);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.397);
+    position: relative;
+  
+    &:hover {
+      background-color: #10aa6a;
+      box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+      outline-color: rgba(49, 138, 172, 0);
+      outline-offset: 80px;
+      text-shadow: 1px 1px 6px #fff;
+    }
+  }
+  
+  .padding-vertodo-button {
+    padding: 30px;
+  }
+  
+  .div-button {
+    text-align: center;
+  }
+  
+  .button-enviar:hover {
+    background-color: #FFC300;
+    border-color: #FFC300;
+    color: #fff;
+  }
+  
+  label, option, .color-form {
+    font-family: Montserrat,sans-serif;
+    color: gray;
+  }
+  
+  .div-form {
+    width: 400px;
+    background: linear-gradient(70deg, #e1e296d0, #f0b444ea);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.397);
+    z-index: 1;
+    overflow: hidden;
+    transition: .7s;
+  
+    &:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: .7s;
+      transition-timing-function: ease;
+      filter: saturate(180%);
+    }
+  }
+  
+  .font-form {
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  
+  .div-contacto-info {
+    max-width: 50%;
+  }
+  
+  .h4-contacto {
+    font-family: Montserrat,sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: 2px;
+    position: relative;
+  }
+  
+  .div-contacto-info2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-sa-contacto {
+    max-width: 400px;
+    display: block;
+    position: relative;
+  }
+  
+  .icons-contacto {
+    width: 30px;
+    display: flex;
+    position: relative;
+    padding-right: 10px;
+  }
+  
+  .line-contacto {
+    width: 300px;
+    height: 2px;
+    background-color: #FFC300;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .maps {
+    margin-top: 10px;
+    position: relative;
+    max-width: 400px;
+    max-height: 175px;
+    transition: .5s;
+    border-radius: 10px;
+  }
+  
+  .flex-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .color-contacto {
+    background-image: url(../img/restaurant4.jpg);
+    height: 800px;
+  }
+  
+  .color-propiedades {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .color-contacto:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .p-info-servicios-html {
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #474343;
+    word-spacing: 1px;
+    text-align: center;
+  }
+  
+  .container-servicios {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .centrado-tipografia {
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #474343;
+    word-spacing: 1px;
+    padding: 20px;
+  }
+  
+  .color-contacto2 {
+    background-image: url(img/background-image-contacto2.webp);
+    height: 800px;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .share__data {
+    text-align: center;
+  }
+  
+  .share__description {
+    margin-bottom: var(--mb-2);
+  }
+  
+  .share__img {
+    width: 280px;
+    justify-self: center;
+  }
+
+  .conct{
+    text-align: center;
+    padding: 50px 80px;
+  }
+  .black{
+    background-color: #000000;
+    color: #AD8A56;
+    font-size: larger;
+  }
+  .boxc {
+    text-align: center;
+    list-style-type: none;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    padding-top: 20px;
+  
+    &:hover {
+      box-shadow: 0 8px 12px 0 #3D3D3D;
+    }
+  }
+  
+  .box {
+    ul li {
+      text-align: center;
+    }
+  
+    &:hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
