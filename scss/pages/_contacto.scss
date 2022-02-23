@@ -326,3 +326,51 @@
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
+
+  .share__data {
+    text-align: center;
+  }
+  
+  .share__description {
+    margin-bottom: var(--mb-2);
+  }
+  
+  .share__img {
+    width: 280px;
+    justify-self: center;
+  }
+
+  .conct{
+    text-align: center;
+    padding: 50px 80px;
+  }
+  .black{
+    background-color: #000000;
+    color: #AD8A56;
+    font-size: larger;
+  }
+  .boxc {
+    text-align: center;
+    list-style-type: none;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    padding-top: 20px;
+  
+    &:hover {
+      box-shadow: 0 8px 12px 0 #3D3D3D;
+    }
+  }
+  
+  .box {
+    ul li {
+      text-align: center;
+    }
+  
+    &:hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+  }

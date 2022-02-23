@@ -146,6 +146,18 @@
       padding-top: 7.5rem;
       padding-bottom: 2rem;
     }
+    .subscribe-cont {
+      width: 98%;
+      padding-left: inherit;
+      padding-right: inherit;
+    }
+    .form-em{
+      width: 350px;
+    }
+    .paragraph-cont {
+      font-size: 12px;
+    }
+
   }
   
   @media (max-width: 768px) {
@@ -299,3 +311,17 @@
       font-size: 13px;
     }
   }
+
+  @media screen and (max-width){
+    .black ul li{
+        text-align: center;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 600px) {
+  .boxc {
+    display: block;
+    padding: 0;
+  }
+}
