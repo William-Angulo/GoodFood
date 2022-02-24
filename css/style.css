@@ -1098,9 +1098,6 @@ footer {
     font-weight: 500; }
   h2 {
     font-weight: 500; }
-  header {
-    position: static;
-    top: 0; }
   .ctIndex__section {
     padding: 5rem 0 3rem 0; }
   .ctIndex__section__title {
@@ -1233,7 +1230,10 @@ footer {
     width: 100%;
     text-align: center; }
     .about .column .content .buttons a:last-child {
-      margin: 1rem 0; } }
+      margin: 1rem 0; }
+  .conct {
+    text-align: center;
+    padding: 70px 90px; } }
 
 @media screen and (max-width) {
   .black ul li {
