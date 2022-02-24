@@ -1016,12 +1016,12 @@ header {
     color: var(--brown); }
     header .logo span {
       color: var(--orange); }
-  header .navbar a {
+  header .navbar1 a {
     font-size: 1.7rem;
     margin-left: 2rem;
     color: whitesmoke;
     text-transform: uppercase; }
-    header .navbar a:hover {
+    header .navbar1 a:hover {
       color: var(--orange); }
   header input {
     display: none; }
@@ -1191,7 +1191,7 @@ footer {
   header label {
     visibility: visible;
     opacity: 1; }
-  header .navbar {
+  header .navbar1 {
     position: absolute;
     top: 100%;
     left: 0;
@@ -1204,11 +1204,11 @@ footer {
     transform: scaleY(0);
     opacity: 0;
     transition: .2s linear; }
-    header .navbar a {
+    header .navbar1 a {
       display: block;
       margin: 2rem 0;
       font-size: 2rem; }
-  header input:checked ~ .navbar {
+  header input:checked ~ .navbar1 {
     transform: scaleY(1);
     opacity: 1; }
   header input:checked ~ label::before {
