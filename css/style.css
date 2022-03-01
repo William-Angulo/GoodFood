@@ -1109,7 +1109,82 @@ footer {
     height: 30px; }
   .ctIndex__serv__img {
     width: 230px;
-    height: 350px; } }
+    height: 350px; }
+  .conct {
+    text-align: center;
+    padding: 65px 90px; } }
+
+@media only screen and (min-width: 900px) {
+  .ctIndex__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 550px 550px;
+    grid-template-areas: ". tituloIn tituloIn ." ". depiIn maniIn ." ". perfIn  podoIn .";
+    height: 1350px;
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 6rem; }
+    .ctIndex__section__serv {
+      gap: 2rem; }
+    .ctIndex__section__title {
+      font-size: 1.8rem; }
+  #depi {
+    grid-area: depiIn; }
+  #perf {
+    grid-area: perfIn; }
+  #mani {
+    grid-area: maniIn; }
+  #podo {
+    grid-area: podoIn; }
+  /* "Servicios" */
+  .ctServi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 500px 500px 500px 500px;
+    grid-template-areas: ". tituloServ ." "depiImg depiImg depiLi" "maniLi maniImg maniImg" "podoImg podoImg podoLi" "perfLi perfImg perfImg";
+    align-items: center;
+    padding: 3rem; }
+    .ctServi__data__list {
+      font-size: 3rem; }
+    .ctServi__img {
+      width: 80%;
+      object-fit: cover;
+      max-width: 700px; }
+  #tituloServ {
+    grid-area: tituloServ;
+    justify-content: center;
+    align-items: center; }
+  #depiLi {
+    grid-area: depiLi;
+    justify-self: center;
+    align-self: center; }
+  #depiImg {
+    grid-area: depiImg;
+    align-self: center;
+    justify-self: center; }
+  #maniLi {
+    grid-area: maniLi;
+    justify-self: center;
+    align-self: center; }
+  #maniImg {
+    grid-area: maniImg;
+    align-self: center;
+    justify-self: center; }
+  #podoLi {
+    grid-area: podoLi;
+    justify-self: center;
+    align-self: center; }
+  #podoImg {
+    grid-area: podoImg;
+    align-self: center;
+    justify-self: center; }
+  #perfLi {
+    grid-area: perfLi;
+    justify-self: center;
+    align-self: center; }
+  #perfImg {
+    grid-area: perfImg;
+    align-self: center;
+    justify-self: center; } }
 
 /* media queries  */
 @media (max-width: 1200px) {
